@@ -42,7 +42,7 @@ def step_interaction():
             w.move_to(p,v_des,a_des)
 
         if x[0] == 'a':
-            w.move_by(deg_to_rad(15), v_des, a_des)
+            w.move_by(deg_to_rad(30), v_des, a_des)
 
         if x[0] == 'b':
             w.move_by(deg_to_rad(-15), v_des, a_des)
