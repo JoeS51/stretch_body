@@ -18,8 +18,8 @@ a_des=w.params['motion']['default']['accel']
 def menu_top():
     print('------ MENU -------')
     print('m: menu')
-    print('a: increment 15 deg')
-    print('b: decrement 15 deg')
+    print('a: increment 30 deg')
+    print('b: decrement 5 deg')
     print('p: position (ticks)')
     print('z: zero')
     print('l: left')
@@ -45,7 +45,7 @@ def step_interaction():
             w.move_by(deg_to_rad(30), v_des, a_des)
 
         if x[0] == 'b':
-            w.move_by(deg_to_rad(-15), v_des, a_des)
+            w.move_by(deg_to_rad(-5), v_des, a_des)
 
         if x[0] == '1':
             v_des = w.params['motion']['slow']['vel']
